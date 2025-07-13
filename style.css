@@ -13,13 +13,16 @@ body {
 button {
   background-color: #007bff;
   color: white;
-  padding: 15px 30px;
+  padding: 20px 40px;       /* Increased padding */
   border: none;
-  border-radius: 8px;
-  font-size: 18px;
+  border-radius: 10px;      /* Slightly larger radius */
+  font-size: 44px;          /* Larger text */
   cursor: pointer;
   transition: background 0.3s ease;
+  min-width: 440px;         /* Optional: ensures wide button */
+  min-height: 140px;         /* Optional: makes it taller */
 }
+
 
 button:hover {
   background-color: #0056b3;
