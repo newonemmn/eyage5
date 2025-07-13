@@ -22,32 +22,32 @@
 <script type="text/javascript" src="//www.highperformanceformat.com/8240c59ae61a0b498b98ac75db068acc/invoke.js"></script>
   
   <div class="container">
-    <button id="watchBtn">Click Here to Watch Video</button>
-	  <h1>බොත්තම ක්ලික් කරන්න. පළමු ක්ලික් කිරීමේදීම, නව ටැබ් එකක දැන්වීමක් විවෘත වේ. දැන්වීම් ටැබය වසා දැමීමෙන් පසු, වීඩියෝව නැරඹීමට නැවත බොත්තම ක්ලික් කරන්න.</h1>
-    <div class="video-wrapper" id="videoWrapper" style="display: none;">
-      <video id="mainVideo" width="640" controls controlsList="nodownload" oncontextmenu="return false;">
-  <source src="video.mp4" type="video/mp4" />
-  Your browser does not support the video tag.
-</video>
-
-    </div>
+  <button id="watchBtn">Click Here to Watch Video</button>
+  <h1 id="instruction">බොත්තම ක්ලික් කරන්න. පළමු ක්ලික් කිරීමේදීම, නව ටැබ් එකක දැන්වීමක් විවෘත වේ. දැන්වීම් ටැබය වසා දැමීමෙන් පසු, වීඩියෝව නැරඹීමට නැවත බොත්තම ක්ලික් කරන්න.</h1>
+  <div class="video-wrapper" id="videoWrapper" style="display: none;">
+    <video id="mainVideo" width="640" controls controlsList="nodownload" oncontextmenu="return false;">
+      <source src="video.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
   </div>
+</div>
 
-  <script>
-    let clicked = false;
-    document.getElementById("watchBtn").addEventListener("click", function () {
-      if (!clicked) {
-        // First click – open ad in new tab
-        window.open("https://www.profitableratecpm.com/jh9ri3zda4?key=5f1f19d4475661693e01257b33a89296", "_blank"); // Replace with your ad link
-        clicked = true;
-      } else {
-        // Second click – show video
-        document.getElementById("videoWrapper").style.display = "block";
-        this.style.display = "none";
-        document.getElementById("mainVideo").play();
-      }
-    });
-  </script>
+<script>
+  let clicked = false;
+  document.getElementById("watchBtn").addEventListener("click", function () {
+    if (!clicked) {
+      // First click – open ad in new tab
+      window.open("https://www.profitableratecpm.com/jh9ri3zda4?key=5f1f19d4475661693e01257b33a89296", "_blank");
+      clicked = true;
+    } else {
+      // Second click – show video and hide button + instruction
+      document.getElementById("videoWrapper").style.display = "block";
+      this.style.display = "none";
+      document.getElementById("instruction").style.display = "none"; // Hide instruction
+      document.getElementById("mainVideo").play();
+    }
+  });
+</script>
 
 <script async="async" data-cfasync="false" src="//pl27151424.profitableratecpm.com/f29a53b6b88cc137a5ae7e69c2e7cd2b/invoke.js"></script>
 <div id="container-f29a53b6b88cc137a5ae7e69c2e7cd2b"></div>
